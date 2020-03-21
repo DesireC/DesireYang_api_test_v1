@@ -5,7 +5,3 @@
 # @Blog    : https://www.cnblogs.com/desireyang/
 # @File    : __init__.py
 # @Software: PyCharm
-website = 'http://www.python.org'
-print(website[-5::6])
-print(website[-10: -4:])
-print(website[::-1])

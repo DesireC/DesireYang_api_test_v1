@@ -5,7 +5,6 @@
 # @Blog    : https://www.cnblogs.com/desireyang/
 # @File    : run_test
 # @Software: PyCharm
-import sys
 
 import pytest
 from common.Path import REPORTS_DIR
@@ -18,5 +17,5 @@ allure_dir = time.strftime("%Y-%m-%d")
 allure_path = os.path.join(REPORTS_DIR, allure_dir)
 # 生成allure测试报告
 pytest.main(["-s", "--alluredir={}".format(allure_path)])
-# 把生成的测试报告升级一下
+# 把生成的测试报告升级一下(自动执行控制台命令)
 os.system("allure generate {} -o {}_2 --clean".format(allure_path, allure_path))
