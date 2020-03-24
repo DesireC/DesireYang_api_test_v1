@@ -31,7 +31,8 @@ class ExcelHandle(object):
         """读取数据存储在字典中"""
         self.__open()
         rows = list(self.sh.rows)
-        return [dict(zip([i.value for i in rows[0]], [r.value for r in row])) for row in rows[1:]]
+        return [dict(zip([i.value for i in rows[0]], [r.value for r in row]))
+                for row in rows[1:]]
 
     def get_data_obj(self) -> list:
         """读取数据存储在类中"""
@@ -42,7 +43,8 @@ class ExcelHandle(object):
         # 遍历用例数据行
         for row in rows[1:]:
             # 把每一行的数据通过zip进行打包，然后转成字典，存入到用例数据列表中
-            case = dict(zip([i.value for i in rows[0]], [r.value for r in row]))
+            case = dict(zip([i.value for i in rows[0]],
+                            [r.value for r in row]))
             # 定义一个用例存放类对象
             case_obj = CaseData()
             for k, v in case.items():
