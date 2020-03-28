@@ -1,5 +1,17 @@
 url: http://api.lemonban.com
 mysql:
   host: 127.0.0.1
-  username: root
-  password: 123456
+  user: root
+  password: '123456'
+  database: py24
+  port: 3306
+mongodb:
+  host: 1227.0.0.1
+  user:
+  password:
+  port:
+redis:
+  host: 127.0.0.1
+  user:
+  password:
+  port:

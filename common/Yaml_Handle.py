@@ -17,7 +17,7 @@ class YamlHandle(object):
     def __init__(self, file_name):
         self.file_name = file_name
 
-    def open(self):
+    def __open(self):
         """
         打开yaml文件，读取全部的信息
         :return: yaml文件中的全部信息
@@ -31,7 +31,7 @@ class YamlHandle(object):
         :param node: 节点名称
         :return: 节点对应的值
         """
-        return self.open()[node]
+        return self.__open()[node]
 
 
 yaml_file = os.path.join(CONF_DIR, 'conf.yaml')
