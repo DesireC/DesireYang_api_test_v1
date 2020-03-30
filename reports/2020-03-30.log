@@ -1,0 +1,4 @@
+. testcase/Test_Login.py::TestLogin::test_login[case0]
+. testcase/Test_Login.py::TestLogin::test_login[case1]
+. testcase/Test_Login.py::TestLogin::test_login[case2]
+. testcase/Test_Login.py::TestLogin::test_login[case3]

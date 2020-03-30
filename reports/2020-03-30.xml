@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+    <testsuite errors="0" failures="0" hostname="yang" name="pytest" skipped="0" tests="4" time="0.203"
+               timestamp="2020-03-30T14:12:21.617894">
+        <testcase classname="testcase.Test_Login.TestLogin" file="testcase\Test_Login.py" line="37"
+                  name="test_login[case0]" time="0.001"></testcase>
+        <testcase classname="testcase.Test_Login.TestLogin" file="testcase\Test_Login.py" line="37"
+                  name="test_login[case1]" time="0.001"></testcase>
+        <testcase classname="testcase.Test_Login.TestLogin" file="testcase\Test_Login.py" line="37"
+                  name="test_login[case2]" time="0.000"></testcase>
+        <testcase classname="testcase.Test_Login.TestLogin" file="testcase\Test_Login.py" line="37"
+                  name="test_login[case3]" time="0.001"></testcase>
+    </testsuite>
+</testsuites>

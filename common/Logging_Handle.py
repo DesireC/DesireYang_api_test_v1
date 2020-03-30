@@ -113,7 +113,7 @@ class MyLog(object):
 
 
 file_path = os.path.join(LOGS_DIR, '{}.log'.format(time.strftime("%Y-%m-%d")))
-log = MyLog(log_name="课堂派测试").output(file_name=file_path, channel=2)
+log = MyLog(log_name="日志").output(file_name=file_path, channel=2)
 
 if __name__ == '__main__':
     file_path = os.path.join(

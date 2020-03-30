@@ -1,0 +1,115 @@
+{
+  "uid" : "8f96f2fee37a0e29",
+  "name" : "test_login[case0]",
+  "fullName" : "testcase.Test_Login.TestLogin#test_login",
+  "historyId" : "b3fa8b112a28fe717a026aecfd409810",
+  "time" : {
+    "start" : 1585547164012,
+    "stop" : 1585547164013,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "79b99e2b9b4e1201",
+      "name" : "log",
+      "source" : "79b99e2b9b4e1201.txt",
+      "type" : "text/plain",
+      "size" : 51
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "Test_Login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "yang"
+  }, {
+    "name" : "thread",
+    "value" : "7568-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.Test_Login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'username': 'admin', 'pwd': '123456', 'expect': '{\"code\": 0, \"msg\": \"登录成功\"}'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "216ca2128564116c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585547160797,
+        "stop" : 1585547160798,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9787136497491dae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585547160797,
+        "stop" : 1585547160798,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7b2fafe274dc6943",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585546914055,
+        "stop" : 1585546914055,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9c2a25eb883c6960",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585546910971,
+        "stop" : 1585546910971,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "1acbb5fa7d6ae8b6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585546910971,
+        "stop" : 1585546910971,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8f96f2fee37a0e29.json",
+  "parameterValues" : [ "{'username': 'admin', 'pwd': '123456', 'expect': '{\"code\": 0, \"msg\": \"登录成功\"}'}" ]
+}

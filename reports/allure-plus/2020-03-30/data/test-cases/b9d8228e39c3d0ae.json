@@ -1,0 +1,115 @@
+{
+  "uid" : "b9d8228e39c3d0ae",
+  "name" : "test_login[case2]",
+  "fullName" : "testcase.Test_Login.TestLogin#test_login",
+  "historyId" : "6b7eea8853e596ba04e23bb73d7235b2",
+  "time" : {
+    "start" : 1585547164021,
+    "stop" : 1585547164021,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f14441421b5abdd5",
+      "name" : "log",
+      "source" : "f14441421b5abdd5.txt",
+      "type" : "text/plain",
+      "size" : 51
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "Test_Login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "yang"
+  }, {
+    "name" : "thread",
+    "value" : "7568-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.Test_Login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "{'username': '', 'pwd': '123456', 'expect': '{\"code\": 1, \"mgs\": \"所有的参数不能为空\"}'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "4d8d1ad06571305c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585547160816,
+        "stop" : 1585547160816,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c7d8310d9ca49ddb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585547160816,
+        "stop" : 1585547160816,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "58835349a143f827",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585546914064,
+        "stop" : 1585546914065,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "20707b6ffe73f417",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585546910987,
+        "stop" : 1585546910987,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d6e336ef23e585c4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1585546910987,
+        "stop" : 1585546910987,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b9d8228e39c3d0ae.json",
+  "parameterValues" : [ "{'username': '', 'pwd': '123456', 'expect': '{\"code\": 1, \"mgs\": \"所有的参数不能为空\"}'}" ]
+}
