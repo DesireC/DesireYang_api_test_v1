@@ -8,10 +8,10 @@
 import sqlite3
 import pymongo
 import pymysql
-from common.Yaml_Handle import y
+from common.Conf_Handle import yh
 
 # 读取mysql数据库配置信息
-mysql_data = y.get_data("mysql")
+mysql_data = yh.get_data("mysql")
 
 
 class MySqlHandle(object):
@@ -141,13 +141,20 @@ class RedisHandle(object):
     pass
 
 
-# conn = pymysql.Connect(host="127.0.0.1", user="root", password="123456", database="py24", port=3306, charset="utf8")
-# cur = conn.cursor()
-# sql = "select * from user"
-# cur.execute(sql)
-# c = cur.fetchall()
-# print(c)
-# mh = MySqlHandle()
-# data = mh.count(sql)
-# print(data, type(data))
-print(pymongo.version)
+if __name__ == '__main__':
+    conn = pymysql.Connect(
+        host="127.0.0.1",
+        user="root",
+        password="123456",
+        database="py24",
+        port=3306,
+        charset="utf8")
+    cur = conn.cursor()
+    sql = "select * from user"
+    cur.execute(sql)
+    c = cur.fetchall()
+    print(c)
+    mh = MySqlHandle()
+    data = mh.count(sql)
+    print(data, type(data))
+    print(pymongo.version)

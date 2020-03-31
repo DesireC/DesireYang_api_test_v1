@@ -30,6 +30,6 @@ allure_path = os.path.join(ALLURE_DIR, report_file)
 allure_plus_path = os.path.join(ALLURE_PLUS_DIR, report_file)
 
 # 生成allure测试报告
-pytest.main(["-s", f"--alluredir={allure_path}"])
+pytest.main(["-v", f"--alluredir={allure_path}"])
 # 把allure测试报告升级成allure-plus(自动执行控制台命令)
 os.system(f"allure generate {allure_path} -o {allure_plus_path} --clean")
