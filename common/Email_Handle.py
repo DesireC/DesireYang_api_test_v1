@@ -5,6 +5,12 @@
 # @Blog    : https://www.cnblogs.com/desireyang/
 # @File    : Email_Handle.py
 # @Software: PyCharm
+
+"""
+=== 发送邮件 ===
+=== SendEMailHandle: 封装发送邮件类
+"""
+
 import os
 import time
 import smtplib

@@ -5,6 +5,13 @@
 # @Blog    : https://www.cnblogs.com/desireyang/
 # @File    : DataParam_Handle.py
 # @Software: PyCharm
+
+"""
+=== 数据参数化 ===
+=== replace_data: 数据参数格式化
+=== ReplaceData：临时保存一些要替换的数据
+"""
+
 import re
 from configparser import NoOptionError
 
@@ -12,7 +19,7 @@ from common.Conf_Handle import ih
 
 
 class ReplaceData:
-    """保存一些要替换的数据"""
+    """临时保存一些要替换的数据"""
     pass
 
 

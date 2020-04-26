@@ -5,6 +5,13 @@
 # @Blog    : https://www.cnblogs.com/desireyang/
 # @File    : Excel_Handle
 # @Software: PyCharm
+
+"""
+=== Excel操作 ===
+=== CaseData: 保存数据类
+=== ExcelHandle: 处理Excel文件
+"""
+
 import os
 
 import openpyxl
@@ -43,8 +50,7 @@ class ExcelHandle(object):
         # 遍历用例数据行
         for row in rows[1:]:
             # 把每一行的数据通过zip进行打包，然后转成字典，存入到用例数据列表中
-            case = dict(zip([i.value for i in rows[0]],
-                            [r.value for r in row]))
+            case = dict(zip([i.value for i in rows[0]], [r.value for r in row]))
             # 定义一个用例存放类对象
             case_obj = CaseData()
             for k, v in case.items():

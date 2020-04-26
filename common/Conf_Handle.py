@@ -5,6 +5,13 @@
 # @Blog    : https://www.cnblogs.com/desireyang/
 # @File    : Conf_Handle.py
 # @Software: PyCharm
+
+"""
+=== 配置文件 ===
+=== YamlHandle: 处理yaml配置文件
+=== IniHandle：封装的读取ini/config配置文件类
+"""
+
 from configparser import ConfigParser
 
 import yaml
@@ -36,7 +43,7 @@ class YamlHandle(object):
 
 
 class IniHandle(ConfigParser):
-    """封装的读取ini配置文件类"""
+    """封装的读取ini/config配置文件类"""
 
     def __init__(self, file_name, encoding='utf8'):
         """
@@ -78,5 +85,5 @@ yh = YamlHandle(yaml_file)
 ih = IniHandle(ini_file)
 
 if __name__ == '__main__':
-    data = yh.get_data('mysq')
+    data = yh.get_data('mysql')
     print(type(data))

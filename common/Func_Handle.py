@@ -5,8 +5,11 @@
 # @Blog    : https://www.cnblogs.com/desireyang/
 # @File    : Func_Handle.py
 # @Software: PyCharm
+
 """
-封装一些常用的功能函数
+=== 封装一些常用的功能函数 ===
+=== random_phone: 随机生成手机号码
+=== RandomName: 随机生成两到三位的名字
 """
 
 import random

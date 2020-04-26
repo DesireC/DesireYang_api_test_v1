@@ -1,11 +1,11 @@
 # DesireYang_api_test_v1
-### ===>>接口自动化项目
+### ===>>接口自动化项目框架搭建
 ## *Author：Desire*
 
 ### 环境：
 
 - **python3.8**：项目环境
-- **PyCharm**：项目工具
+- **PyCharm**：项目编写工具
 - **Typora**：Markdown编辑器
 - **GitHub**：代码托管
 
@@ -14,6 +14,7 @@
 - **PyMySQL**：MySQL数据库所需库
 - **PyYAML**：YAML配置文件所需库
 - **pymongo**：MongoDB数据库所需库
+- **openpyxl**：操作excel所需库
 - **jsonpath**：读取json格式所需库
 - **pytest**：Pytest测试框架所需库
 - **requests**：发送http请求所需库
@@ -24,7 +25,7 @@
 ### PO模式分层设计
 
 - **[common](common)**：存放通用封装模块
-  - ***[Conf_Handle.py](common/Conf_Handle.py)**：操作配置文件(yaml/ini)模块*
+  - ***[Conf_Handle.py](common/Conf_Handle.py)**：操作配置文件(yaml/ini(config))模块*
   - ***[DataParam_Handle.py](common/DataParam_Handle.py)**：操作数据格式参数化模块*
   - ***[DB_Handle.py](common/DB_Handle.py)**：操作数据库模块*
   - ***[Email_Handle.py](common/Email_Handle.py)**：操作发送邮件模块*
@@ -33,9 +34,9 @@
   - ***[Logging_Handle.py](common/Logging_Handle.py)**：操作日志模块*
   - ***[Path.py](common/Path.py)**：操作项目路径模块*
   - ***[Request_Handle.py](common/Request_Handle.py)**：操作接口请求模块*
-- **[conf](conf)**：存放配置文件
-- **[data](data)**：存放数据
-- **[logs](logs)**：存放日志文件
+- **[conf](conf)**：存放配置文件(.yaml/.ini/.config)
+- **[data](data)**：存放数据(.xlsx/.yaml)
+- **[logs](logs)**：存放日志文件(.log)
 - **[reports](reports)**：存放生成的测试报告
   - ***[allure](reports/allure)*：存放allure生成的测试报告**
   - ***[allure-plus](reports/allure-plus)*：存放allure升级版的测试报告（查看更加的方便，在PyCharm中可直接查看）**
@@ -44,3 +45,13 @@
 - **[pytest.ini](pytest.ini)**：pytest的配置文件(里面不要出现中文，否则有时候运行会报编码错误)
 - **[run_test.py](run_test.py)**：整个项目的入口
 
+### 第三方库导出文件
+- **[pip3.8.txt](pip3.8.txt)**：所需第三方库导出文件，
+#### 一键导出
+```cmd
+pip freeze >pip3.8.txt
+```
+#### 一键安装
+```cmd
+pip install -r pip3.8.txt
+```

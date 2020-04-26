@@ -6,6 +6,12 @@
 # @File    : Logging_Handle
 # @Software: PyCharm
 # Explain  : 处理日志
+
+"""
+=== 封装的日志类 ===
+=== MyLog: 封装的日志类
+"""
+
 import logging
 import os
 import time
@@ -119,7 +125,7 @@ if __name__ == '__main__':
     file_path = os.path.join(
         LOGS_DIR, '{}.log'.format(
             time.strftime("%Y-%m-%d")))
-    log = MyLog(log_name="课堂派测试")
+    log = MyLog(log_name="测试")
     my_log = log.output(file_name=file_path, channel=2)
     my_log.debug("这个是自己记录了的debug等级的日志")
     my_log.info("这个是自己记录了的info等级的日志")
